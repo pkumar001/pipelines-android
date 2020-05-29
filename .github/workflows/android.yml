@@ -21,6 +21,8 @@ jobs:
       run: chmod +x ./gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Create apk path
+      run: mkdir -p app/build/outputs/apk/debug
     - name: Build debug APK
       run: bash ./gradlew assembleDebug --info
     - name: Upload APK
