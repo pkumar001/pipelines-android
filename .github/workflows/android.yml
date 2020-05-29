@@ -20,4 +20,4 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x ./gradlew
     - name: Build with Gradle
-      run: ./gradlew build --warning-mode all
+      run: ./gradlew build — stacktrace
