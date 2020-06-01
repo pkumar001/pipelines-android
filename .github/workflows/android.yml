@@ -26,7 +26,7 @@ jobs:
     - name: Build debug APK
       run: bash ./gradlew assembleDebug --info
     - name: Check directory
-      run: fs.readdirSync(/home/runner/work/pipelines-android/pipelines-android)
+      run: echo fs.readdirSync('/home/runner/work/pipelines-android/pipelines-android/')
     - name: Upload APK
       uses: actions/upload-artifact@v1
       with:
