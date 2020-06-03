@@ -25,10 +25,8 @@ jobs:
       run: mkdir -p app/build/outputs/apk/debug
     - name: Build debug APK
       run: bash ./gradlew assembleDebug --info
-    - name: Check directory
-      run: echo fs.readdirSync('./home/runner/work')
     - name: Upload APK
       uses: actions/upload-artifact@v1
       with:
         name: apk
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: app/build/outputs/
