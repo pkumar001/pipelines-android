@@ -31,15 +31,12 @@ jobs:
         name: apk
         path: app/build/outputs/apk/prod/debug/app-prod-debug.apk
 
-  hello_world_job:
+  kryptowire_analysis_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Submit app to Kryptowire Portal
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: actions/hello-world-javascript-action@v1
-      with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Hello world action step
+        id: hello
+        uses: pkumar001/kryptowire-analysis-action@master
+        with:
+          path-to-file: 'Mona the Octocat'
