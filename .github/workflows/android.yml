@@ -35,8 +35,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Submit app to Kryptowire Portal
     steps:
-      - name: Hello world action step
-        id: hello
+      - name: Kryptowire Analysis Submission
+        id: appSubmit
         uses: pkumar001/kryptowire-analysis-action@master
         with:
-          path-to-file: 'Mona the Octocat'
+          path-to-file: app/build/outputs/apk/prod/debug/app-prod-debug.apk
+
