@@ -40,6 +40,6 @@ jobs:
         id: appSubmit
         uses: pkumar001/kryptowire-analysis-action@master
         with:
-          path-to-file: app/build/outputs/apk/prod/debug/app-prod-debug.apk
+          path-to-file: /home/runner/work/pipelines-android/pipelines-android/app/build/outputs/apk/prod/debug/app-prod-debug.apk
           platform: "android"
 
