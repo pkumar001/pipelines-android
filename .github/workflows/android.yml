@@ -53,4 +53,5 @@ jobs:
         with:
           path-to-file: path/to/artifact/app-prod-debug.apk
           platform: "android"
+          key: "gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu"
 
