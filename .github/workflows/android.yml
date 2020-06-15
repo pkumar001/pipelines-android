@@ -48,7 +48,7 @@ jobs:
         working-directory: path/to/artifact
       
       - name: Kryptowire Analysis Submission
-        id: appSubmit
+        id: appSubmits
         uses: pkumar001/kryptowire-analysis-action@master
         with:
           path-to-file: path/to/artifact/app-prod-debug.apk
