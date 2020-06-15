@@ -42,11 +42,7 @@ jobs:
         with:
           name: apk
           path: path/to/artifact
-    
-      - name: Display structure of downloaded files
-        run: ls -R
-        working-directory: path/to/artifact
-      
+          
       - name: Kryptowire Analysis Submission
         id: appSubmits
         uses: pkumar001/kryptowire-analysis-action@master
