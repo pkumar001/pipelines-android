@@ -36,10 +36,21 @@ jobs:
     runs-on: ubuntu-latest
     name: Submit app to Kryptowire Portal
     steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: apk
+          path: path/to/artifact
+    
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: path/to/artifact
+      
       - name: Kryptowire Analysis Submission
         id: appSubmit
         uses: pkumar001/kryptowire-analysis-action@master
         with:
-          path-to-file: /home/runner/work/pipelines-android/pipelines-android/app/build/outputs/apk/prod/debug/app-prod-debug.apk
+          path-to-file: path/to/artifact/app-prod-debug.apk
           platform: "android"
 
