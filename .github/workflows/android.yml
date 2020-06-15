@@ -32,6 +32,7 @@ jobs:
         path: app/build/outputs/apk/prod/debug/app-prod-debug.apk
 
   kryptowire_analysis_job:
+    needs: [build]
     runs-on: ubuntu-latest
     name: Submit app to Kryptowire Portal
     steps:
