@@ -42,9 +42,11 @@ jobs:
           path: path/to/artifact
           
       - name: Kryptowire Analysis
-        uses: pkumar001/kryptowire-analysis-action@2.0.1
-        id: appSubmit
+        uses: pkumar001/kryptowire-analysis-action@1.0.1
         with:
-          path-to-file: "app/build/outputs/apk/prod/debug/app-prod-debug.apk"
+          # Path to the artifact file
+          path-to-file: path/to/artifact/app-prod-debug.apk
+          # Platform the apk belongs to
           platform: "android"
-          apiKey: "gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu"
+          # API Key for the user
+          apiKey: ${{ secrets.KRYPTOWIRE_API_KEY }}
