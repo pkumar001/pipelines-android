@@ -42,7 +42,7 @@ jobs:
           path: path/to/artifact
           
       - name: Kryptowire Analysis
-        uses: pkumar001/kryptowire-analysis-action@1.0.1
+        uses: pkumar001/kryptowire-analysis-action@2.0.1
         with:
           # Path to the artifact file
           path-to-file: path/to/artifact/app-prod-debug.apk
