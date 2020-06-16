@@ -50,3 +50,13 @@ jobs:
           platform: "android"
           # API Key for the user
           apiKey: ${{ secrets.KRYPTOWIRE_API_KEY }}
+
+      - name: Kryptowire Analysis
+        uses: pkumar001/kryptowire-analysis-action@master
+        with:
+          # Path to the artifact file
+          path-to-file: path/to/artifact/app-prod-debug.apk
+          # Platform the app belongs to
+          platform: "android"
+          # API Key for the user
+          apiKey: ${{ secrets.KRYPTOWIRE_API_KEY }}
