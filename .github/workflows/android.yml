@@ -28,7 +28,7 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v1
       with:
-        name: app
+        name: apk
         path: app/build/outputs/apk/prod/debug/app-prod-debug.apk
 
   kryptowire_analysis_job:
@@ -38,7 +38,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v2
         with:
-          name: app
+          name: apk
           path: path/to/artifact
           
       - name: Kryptowire Analysis
