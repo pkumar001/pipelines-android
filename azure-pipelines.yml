@@ -32,3 +32,9 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
+
+- task: KryptowireAnalysis@1
+  inputs:
+    filepath: '/home/vsts/work/1/s/app/build/outputs/apk/debug/app-debug.apk'
+    apikey: 'gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu'
+    platform: 'android'
