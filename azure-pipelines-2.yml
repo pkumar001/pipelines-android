@@ -39,5 +39,5 @@ steps:
 - task: KryptowireAnalysis@1
   inputs:
     filepath: '/home/vsts/work/1/s/app/build/outputs/apk/mock/debug/app-mock-debug.apk'
-    apikey: 'HdE2QrKVG3veC1qUgkFE8g3xkSnuum5XSqu1'
+    apikey: 'gCkN9ZEevDVY1SqgXxL1lXcPGO7iRHrMomqu'
     platform: 'android'
