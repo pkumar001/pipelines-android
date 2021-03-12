@@ -39,13 +39,13 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: app
-          path: path/to/artifact
+          path: path/for/artifact
 
       - name: Kryptowire Analysis
         uses: pkumar001/kryptowire-analysis-action@master
         with:
           # Path to the artifact file
-          path-to-file: path/to/artifact/app-prod-debug.apk
+          path-to-file: path/for/artifact/app-prod-debug.apk
           # Platform the app belongs to
           platform: "android"
           # API Key for the user
